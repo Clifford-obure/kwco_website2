@@ -61,6 +61,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/insights"
+                  className="text-gray-400 hover:text-amber-500 transition"
+                >
+                  Client Insights
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/contact"
                   className="text-gray-400 hover:text-amber-500 transition"
                 >
@@ -95,6 +103,14 @@ const Footer = () => {
                   className="text-gray-400 hover:text-amber-500 transition"
                 >
                   Conveyancing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/practice-areas/dispute-resolution"
+                  className="text-gray-400 hover:text-amber-500 transition"
+                >
+                  Dispute Resolution
                 </Link>
               </li>
             </ul>

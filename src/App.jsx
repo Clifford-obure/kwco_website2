@@ -14,6 +14,7 @@ import PracticeAreas from "./pages/PracticeAreas/PracticeAreas";
 import Litigation from "./pages/PracticeAreas/Litigation";
 import CreditCollection from "./pages/PracticeAreas/CreditCollection";
 import Conveyancing from "./pages/PracticeAreas/Conveyancing";
+import DisputeResolution from "./pages/PracticeAreas/DisputeResolution";
 import OurPeople from "./pages/OurPeople";
 import ClientInsights from "./pages/ClientInsights";
 import Contact from "./pages/Contact";
@@ -41,6 +42,10 @@ function App() {
             <Route
               path="/practice-areas/conveyancing"
               element={<Conveyancing />}
+            />
+            <Route
+              path="/practice-areas/dispute-resolution"
+              element={<DisputeResolution />}
             />
             <Route path="/our-people" element={<OurPeople />} />
             <Route path="/insights" element={<ClientInsights />} />

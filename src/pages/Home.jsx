@@ -47,6 +47,14 @@ const Home = () => {
         "Full-service conveyancing solutions for property transactions.",
       link: "/practice-areas/conveyancing",
     },
+    {
+      id: "dispute-resolution",
+      icon: <Shield className="w-12 h-12" />,
+      title: "Dispute Resolution",
+      description:
+        "Alternative dispute resolution services including mediation and arbitration.",
+      link: "/practice-areas/dispute-resolution",
+    },
   ];
 
   const testimonials = [
@@ -64,6 +72,11 @@ const Home = () => {
       client: "Mary Wanjiku",
       company: "Finance Solutions Kenya",
       text: "Their credit collection services have significantly improved our debt recovery rates.",
+    },
+    {
+      client: "Peter Mwangi",
+      company: "Manufacturing Co. Ltd",
+      text: "KWCO's mediation services helped us resolve our partnership dispute without going to court.",
     },
   ];
 
@@ -136,12 +149,12 @@ const Home = () => {
       category: "Credit Collection",
     },
     {
-      title: "Constitutional Petition: When and How to File",
+      title: "Alternative Dispute Resolution: A Cost-Effective Solution",
       excerpt:
-        "A step-by-step guide to filing constitutional petitions in Kenya.",
-      author: "Kamuti Waweru",
+        "How mediation and arbitration can save time and money in legal disputes.",
+      author: "Sarah Njoroge",
       date: "January 5, 2025",
-      category: "Constitutional Law",
+      category: "Dispute Resolution",
     },
   ];
 
@@ -181,8 +194,9 @@ const Home = () => {
           </h1>
           <p className="text-xl lg:text-2xl mb-8">
             KWCO is a premier law firm in Nairobi, Kenya, specializing in
-            litigation, credit collection, and conveyancing. With 50+ years of
-            cumulative experience, we deliver trusted legal solutions.
+            litigation, credit collection, conveyancing, and dispute resolution.
+            With 50+ years of cumulative experience, we deliver trusted legal
+            solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -314,12 +328,12 @@ const Home = () => {
               Our Practice Areas
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We offer comprehensive legal services across three core practice
+              We offer comprehensive legal services across four core practice
               areas
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
             {practiceAreas.map((area) => (
               <div
                 key={area.id}
@@ -466,7 +480,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}

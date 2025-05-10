@@ -1,8 +1,7 @@
 // src/pages/PracticeAreas/PracticeAreas.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { Scale, Briefcase, FileText, ArrowRight } from "lucide-react";
-import law from "./../../assets/law.png";
+import { Scale, Briefcase, FileText, Shield, ArrowRight } from "lucide-react";
 
 const PracticeAreas = () => {
   const practiceAreas = [
@@ -54,6 +53,22 @@ const PracticeAreas = () => {
       ],
       link: "/practice-areas/conveyancing",
     },
+    {
+      id: "dispute-resolution",
+      icon: <Shield className="w-16 h-16" />,
+      title: "Dispute Resolution",
+      description:
+        "Alternative dispute resolution services including mediation and arbitration, providing efficient and cost-effective solutions to conflicts outside the courtroom.",
+      services: [
+        "Mediation",
+        "Arbitration",
+        "Negotiation",
+        "Commercial ADR",
+        "Labor Disputes",
+        "Family Mediation",
+      ],
+      link: "/practice-areas/dispute-resolution",
+    },
   ];
 
   return (
@@ -61,13 +76,13 @@ const PracticeAreas = () => {
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center">
         <div
-          className="absolute inset-0 bg-contain bg-no-repeat bg-center"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${law})`,
+            backgroundImage: `url('/api/placeholder/1920/600')`,
             filter: "brightness(0.4)",
           }}
         />
-        <div className="relative z-10 text-center text-black max-w-4xl mx-auto px-4">
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">Our Practice Areas</h1>
           <p className="text-xl">
             Comprehensive Legal Services Tailored to Your Needs
@@ -79,7 +94,7 @@ const PracticeAreas = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xl text-gray-600">
-            At KWCO, we offer specialized legal services across three core
+            At KWCO, we offer specialized legal services across four core
             practice areas. Our team of experienced lawyers brings deep
             expertise and a proven track record in each of these fields,
             ensuring you receive the highest quality legal representation.
@@ -90,7 +105,7 @@ const PracticeAreas = () => {
       {/* Practice Areas Grid */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
             {practiceAreas.map((area) => (
               <div
                 key={area.id}

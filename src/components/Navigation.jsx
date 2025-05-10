@@ -74,6 +74,10 @@ const Navigation = () => {
           href: "/practice-areas/credit-collection",
         },
         { label: "Conveyancing", href: "/practice-areas/conveyancing" },
+        {
+          label: "Dispute Resolution",
+          href: "/practice-areas/dispute-resolution",
+        },
       ],
     },
     {
